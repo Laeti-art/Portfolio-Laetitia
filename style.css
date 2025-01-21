@@ -1,0 +1,163 @@
+
+
+@media screen and ( max-width: 600px ) {
+body {
+  font-size: 80%;
+  }
+}
+
+
+/*header*/
+
+@keyframes lien {
+  from {
+      color:#ff6633;
+  }
+  to {
+      color: rgb(189, 182, 38);
+  }
+}
+a {
+  text-decoration: none;
+  color: #ff6633;
+}
+
+a:hover {
+  animation: lien 0.5 forwards;
+}
+
+
+#logo {
+  width: 10%;
+  height: fit-content;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/*aside*/
+
+
+  aside {
+  position: sticky;
+  }
+  @keyframes grossi {
+    from {
+        width: 89px;
+    }
+    to {
+        width: 100px;
+    }
+  }
+  #portfolio:hover {
+  animation:grossi 0.5s forwards;
+  }
+  #portfolio {
+    cursor: pointer;
+    border:5px white solid;
+    width: 89px;
+  }
+
+
+/*main*/
+
+#conteneur-principal {
+  background-color: black;
+  color:white;
+}
+
+#intro {
+  display: flex;
+  flex-direction: row;
+}
+
+#je-suis {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+    position: relative;
+    bottom: -44px;
+    margin-bottom: 0px;
+}
+
+#je-suis h2 { 
+  background-color: black;
+  padding: 0px 20px 0px 20px;
+ 
+}
+
+p {
+  font-size: medium;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size:13px;
+    font-style: normal;
+  }
+
+  #biographie {
+    padding: 30px;
+    outline: 1px white solid;
+  }
+
+
+ #vid-bio {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+ }
+ #video-border {
+  outline: 1px white solid;
+  padding: 30px
+ }
+
+ #vid-bio div {
+  width: 50%;
+  border-bottom: 10px white solid;
+ }
+
+#mes-forces {
+  background-color: black;
+  width: 90%; 
+}
+ 
+h2 {
+  font-size: 40px;
+  color:#ff6633; 
+  margin: 0;
+}
+
+#texte-d-action {
+  background-color: black;
+  border: 15px greenyellow solid ;
+  color:white;
+  display: flex;
+  padding: 6%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  #pourquoi-me-choisir {
+    break-inside: avoid;
+    padding-left: 15px;
+    
+  }
+
+  #me-choisir {
+  padding: 0px 15px 0px 15px;
+  }
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
