@@ -6,8 +6,37 @@ body {
   }
 }
 
+#header {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /*header*/
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 20px 30px;
+}
+
+#logo {
+  width: 10%;
+  height: fit-content;
+}
+
+
+h1 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#Contactez-moi {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 3px 15px 3px 15px;
+}
 
 @keyframes lien {
   from {
@@ -17,6 +46,7 @@ body {
       color: rgb(189, 182, 38);
   }
 }
+
 a {
   text-decoration: none;
   color: #ff6633;
@@ -27,52 +57,49 @@ a:hover {
 }
 
 
-#logo {
-  width: 10%;
-  height: fit-content;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-h1 {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
 
 /*aside*/
 
 
-  aside {
-  position: sticky;
-  }
-  @keyframes grossi {
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes grossi {
     from {
         width: 89px;
     }
     to {
-        width: 100px;
+        width: 110px;
     }
-  }
-  #portfolio:hover {
+}
+
+#portfolio:hover {
   animation:grossi 0.5s forwards;
   }
-  #portfolio {
+
+#portfolio {
     cursor: pointer;
-    border:5px white solid;
     width: 89px;
+    padding-right: 10px;
   }
 
 
-/*main*/
+
+
+/*PARTIE 1*/
+
 
 #conteneur-principal {
   background-color: black;
   color:white;
+}
+
+h2 {
+  font-size: 40px;
+  color:#ff6633; 
 }
 
 #intro {
@@ -91,8 +118,7 @@ h1 {
 
 #je-suis h2 { 
   background-color: black;
-  padding: 0px 20px 0px 20px;
- 
+  padding: 0px 20px 0px 20px; 
 }
 
 p {
@@ -109,55 +135,62 @@ p {
   }
 
 
- #vid-bio {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
- }
- #video-border {
-  outline: 1px white solid;
-  padding: 30px
- }
+    #vid-bio {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
 
- #vid-bio div {
-  width: 50%;
-  border-bottom: 10px white solid;
- }
+    #video-border {
+      outline: 1px white solid;
+      padding: 30px
+    }
 
-#mes-forces {
-  background-color: black;
-  width: 90%; 
-}
+    #vid-bio div {
+      width: 50%;
+      border-bottom: 10px white solid;
+    }
+
+    #mes-forces {
+      background-color: black;
+      width: 90%; 
+    }
  
-h2 {
-  font-size: 40px;
-  color:#ff6633; 
-  margin: 0;
-}
+
+
+    /*PARTIE 2*/
+
 
 #texte-d-action {
   background-color: black;
-  border: 15px greenyellow solid ;
   color:white;
   display: flex;
-  padding: 6%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  }
+}
 
-  #pourquoi-me-choisir {
+#pourquoi-me-choisir {
     break-inside: avoid;
-    padding-left: 15px;
-    
-  }
+    padding-left: 15px; 
+}
 
-  #me-choisir {
+#me-choisir {
   padding: 0px 15px 0px 15px;
-  }
+}
+
+
+
+
+/*footer*/
 
 footer {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: medium;
+}
+
+#texte-footer {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 3px 15px 3px 15px;
 }
